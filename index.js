@@ -64,3 +64,44 @@ Object.defineProperty(this,'_setDiagnostico', {
     }
 });
 
+// Getters And Setters
+
+Paciente.prototype.getNombre = function(){
+    return this._getNombre;
+}
+
+Paciente.prototype.setNombre = function(nombre){
+    return this._setNombre = nombre;
+}
+
+Paciente.prototype.getEdad = function(){
+    return this._getEdad;
+}
+
+Paciente.prototype.setEdad = function(edad){
+    return this._setEdad = edad;
+}
+
+Paciente.prototype.getRut = function(){
+    return this._getRut;
+}
+
+Paciente.prototype.setRut = function(rut){
+    return this._setRut = rut;
+}
+
+Paciente.prototype.getDiagnostico = function(){
+    return this._getDiagnostico;
+}
+
+Paciente.prototype.setDiagnostico = function(diagnostico){
+    return this._setDiagnostico = diagnostico;
+}
+
+
+
+
+
+
+
+
