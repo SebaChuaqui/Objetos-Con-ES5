@@ -28,3 +28,39 @@ Object.defineProperty(this,'_setNombre', {
     }
 });
 
+Object.defineProperty(this,'_getEdad',{
+    get: function(){
+        return _edad;
+    }
+});
+
+Object.defineProperty(this,'_setEdad', {
+    set: function(edad){
+        _edad = edad;
+    }
+});
+
+Object.defineProperty(this,'_getRut',{
+    get: function(){
+        return _rut;
+    }
+});
+
+Object.defineProperty(this,'_setRut', {
+    set: function(rut){
+        _rut = rut;
+    }
+});
+
+Object.defineProperty(this,'_getDiagnostico',{
+    get: function(){
+        return _diagnostico;
+    }
+});
+
+Object.defineProperty(this,'_setDiagnostico', {
+    set: function(diagnostico){
+        _diagnostico = diagnostico;
+    }
+});
+
