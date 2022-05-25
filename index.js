@@ -98,6 +98,19 @@ Paciente.prototype.setDiagnostico = function(diagnostico){
     return this._setDiagnostico = diagnostico;
 }
 
+// Método para mostrar los pacientes y su información
+
+Consultorio.prototype.mostrarPacientes = function(){
+    console.log('Todos los Pacientes del Consultorio: ');
+}
+
+// FOR para recorrer el arreglo e imprimir la información por consola
+
+for(var i = 0; i < this.pacientes.length; i++){
+    if(nombre == this.pacientes[i].getNombre()){
+        console.log('Nombre: ' + this.pacientes[i].getNombre() + ' / ' + 'Edad: ' + this.pacientes[i].getEdad() + ' / ' + 'Rut: ' + this.pacientes[i].getRut() + ' / ' + 'Diagnóstico: ' + this.pacientes[i].getDiagnostico());
+    }
+}
 
 
 
